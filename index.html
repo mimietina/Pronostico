@@ -11,21 +11,27 @@
 <body>
     <div class="weather-app">
 <header>
-    <form>
-        <input type="search" placeholder="Enter a city....." required/>
-        <input type="submit" value="search"/>
+    <form class="search-form">
+        <input type="search" placeholder="Enter a city....." required class="search-form-input"/>
+        <input type="submit" value="search" class="search-form-button"/>
     </form>
 </header>
  <main>
+    <div class="weather-app-data">
     <div>
-<h1> Midrand </h1>   
-<p>
+<h1 class="weather-app-city"> Midrand </h1>   
+<p class="weather-app-details">
     Thursday 15:42, Sunny
     <br/>
-    Humidity : 22%, Wind: 5km/h
+    Humidity : <strong>22%</strong>, Wind: <strong>5km/h</strong>
 </p>
-</div>
-<div>⛅ 21°C</div>
+   </div>
+   <div class="weather-app-temperature-container">
+<div class="weather-app-icon">⛅</div> 
+<div class="weather-app-temperature"> 21 </div>
+<div class="weather-app-unit"> °C</div>
+    </div>
+    </div>
 </main>
 
 <footer> 
