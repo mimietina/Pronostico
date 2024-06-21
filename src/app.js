@@ -42,12 +42,13 @@ function searchCity(city) {
   let apiKey = "4boe913d4579b6981f129f90tda79ab0";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
   axios.get(apiUrl).then(refreshWeather);
+
 }
 
 function handleSearchSubmit(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-form-input");
-
+  
   searchCity(searchInput.value);
 }
 
