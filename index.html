@@ -28,16 +28,17 @@
     <main>
       <div class="weather-app-data">
         <div>
-          <h1 class="weather-app-city" id="city">Midrand</h1>
+          <h1 class="weather-app-city" id="city"></h1>
           <p class="weather-app-details">
-            Thursday 15:42, Sunny
+            <span id="time"></span>
+             <span id="description"></span>
             <br />
-            Humidity : <strong>22%</strong>, Wind: <strong>5km/h</strong>
+            Humidity : <strong id="humidity"></strong>, Wind: <strong id="wind-speed"></strong>
           </p>
         </div>
         <div class="weather-app-temperature-container">
           <div class="weather-app-icon">⛅</div>
-          <div class="weather-app-temperature">21</div>
+          <div class="weather-app-temperature" id="temperature">21</div>
           <div class="weather-app-unit">°C</div>
         </div>
       </div>
